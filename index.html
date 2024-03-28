@@ -1,10 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Coders Coffeehouse, Dublin based coffeehouse offering free unlimited wifi and quality caffeine to fuel your code.">
+	<meta name="keywords" content="coffeehouse, coffee, developers cafe, free wifi, dublin">
+	<meta name="author" content="Coders Coffeehouse">
+	<title>Coders Coffeehouse</title>
+	<style>
+		h1 {
+			color: brown;
+		}
+		
+		p {
+			color: white;
+		}
+
+		header {
+			background-color: black;
+		}
+
+		.bold {
+    		font-weight: bold;
+		}
+
+		/* Add a selector for the id of coffee-box to this css code declaration */
+		 {
+			background-color: brown;
+		}
+		
+		/* Add a selector for the id of tea-box to this css code declaration */
+		 {
+			 background-color: #6f4e37;
+		}
+
+		/* Add a selector for the id of cold-drinks-box to this css code declaration */
+		 {
+			background-color: chocolate;
+		}
+    
+	</style>
 </head>
+
 <body>
-    <h1>Test</h1>
-    <p>Lorem ipsum dolar sit amet</p>
-</body>    
+
+	<header id="home">
+		<h1>Welcome to Coders Coffeehouse!</h1>
+		<p>Turning caffeine into code since 1999.</p>
+	</header>
+
+	<hr>
+
+	<nav>
+		<a href="#home" aria-label="Go to the top of the page">Home</a>
+		<a href="#drinks" aria-label="Go to drinks menu section">Drinks Menu</a>
+		<a href="#contact" aria-label="Go to contact information section">Contact</a>
+		<a href="form.html" aria-label="Fill in our survey for your chance to win free coffee">Win Free Coffee</a>
+	</nav>
+
+	<section>
+		<div>
+			<h2>Reasons to love us</h2>
+			<ol>
+				<li>Free unlimited wifi</li>
+				<li>Charging outlets with every table</li>
+				<li>High quality coffee to fuel your code</li>
+			</ol>
+		</div>
+	
+		<img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coders-coffeehouse-project-1.jpg" 
+			alt="Cafe table with laptop and coffee" width="400">
+	</section>
+
+
+  <section id="drinks">
+    <h2>Drinks Menu</h2>
+
+	<!-- Give this div an id of coffee-box -->
+    <div>
+      <h3>Coffee</h3>
+      <ul>
+        <li>Latte</li>
+        <li>Americano</li>
+        <li>Cappuccino</li>
+        <li>Espresso</li>
+        <li>Irish Coffee</li>
+        <li>Macchiato</li>
+        <li>Flat White</li>
+      </ul>
+    </div>
+
+	<!-- Give this div an id of tea-box -->
+    <div>
+      <h3>Tea</h3>
+      <ul>
+        <li>Earl Grey</li>
+        <li>Green tea</li>
+        <li>Lemon tea</li>
+        <li>Peppermint tea</li>
+        <li>Ginger tea</li>
+        <li>Mint tea</li>
+      </ul>
+    </div>
+
+	<!-- Give this div an id of cold-drinks-box -->
+    <div>
+      <h3>Cold drinks</h3>
+      <ul>
+        <li>Iced coffee</li>
+        <li>Ice Tea</li>
+        <li>Spring water</li>
+        <li>Soft drinks
+          <ul> 
+            <li>Coca Cola</li>
+            <li>Fanta</li>
+            <li>7up</li>
+          </ul>
+			  </li>
+		  </ul>
+    </div>
+
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <h3>Open times</h3>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>Open</th>
+        <th>Close</th>	
+      </tr>
+      <tr>
+        <td>Mon - Fri</td>
+        <td>09:00</td>
+        <td>21:00</td>
+      </tr>
+      <tr>
+        <td>Weekend</td>
+        <td>10:00</td>
+        <td>22:00</td>
+      </tr>	
+    </table>
+
+    <h3>Get in touch</h3>
+
+    <div>
+      <span class="bold">Phone: </span>
+      <span>012 345 678 910</span>
+    </div>
+    <div>
+      <span class="bold">Email: </span>
+      <span>email@coderscoffeehouse.com</span>
+    </div>
+
+
+    <h3>Address</h3>
+    <p>Coders Coffeehouse,<br>42 Coffeebean street,<br>Dublin</p>
+  </section>
+
+
+  <section>
+    <iframe src="https://bit.ly/2QVfkiy" width="100%" height="300"></iframe>
+  </section>
+
+
+	<footer>
+		<span>Find us on:</span>
+		<a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+		<a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+		<a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+
+		<p>Copyright © Coders Coffeehouse 2020</p>
+	
+	</footer>
+
+</body>
+
+</html>
