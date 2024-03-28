@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Complete our survey for your chance to win a years supply of coffee from Coders Coffeehouse.">
+	<meta name="keywords" content="coffeehouse, coffee, developers cafe, free wifi, dublin">
+	<meta name="author" content="Coders Coffeehouse">
+	<title>Win a years supply of coffee from Coders Coffeehouse</title>
+	<style>
+
+		/*
+		Add an attribute type selector to this code
+		declaration that targets only input elements 
+		with a type attribute set to submit. You don't
+		need to worry about the css properties and values
+		inside the curly braces yet; we will cover these
+		in future lessons.
+		*/
+		  input[type=submit] {
+			margin-left: 0.75rem;
+			padding: 0.75rem;
+			background-color: #5e361b;
+			color: white;
+			border: none;
+			border-radius: 5px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Win a years supply of coffee from Coders Coffeehouse</h1>
+		<p>Complete our survey for your chance to win!</p>
+	</header>
+	
+	<hr>
+	
+	<nav>
+		<a href="#home" aria-label="Go to the top of the page">Home</a>
+		<a href="#drinks" aria-label="Go to drinks menu section">Drinks Menu</a>
+		<a href="#contact" aria-label="Go to contact information section">Contact</a>
+		<a href="form.html" aria-label="Fill in our survey for your chance to win free coffee">Win Free Coffee</a>
+	</nav>
+	
+	<form action="https://formdump.codeinstitute.net" method="POST">
+
+	<fieldset>
+		<legend>Your details</legend>
+
+		<div>
+			<label for="name-field">Name</label>
+			<input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+		</div>
+		<div>
+			<label for="email-field">Email</label>
+			<input id="email-field" type="email" name="email" placeholder="Your email" required>
+		</div>
+
+		<label for="age">Age</label>
+		<select id="age" name="age" required>
+			<option value="under-20">Under 20</option>
+			<option value="20s">20-29</option>
+			<option value="30s">30-39</option>
+			<option value="40s">40-49</option>
+			<option value="50s">50-59</option>
+			<option value="60+">60+</option>
+		</select>
+
+	</fieldset>
+
+		
+		<fieldset>
+			<legend>Our products</legend>
+			<div>
+				<label for="fav-coffee">What is your favourite coffee?</label>
+				<input id="fav-coffee" list="coffees" name="fav-coffee" required>
+				<datalist id="coffees">
+					<option value="Latte">
+					<option value="Americano">
+					<option value="Cappuccino">
+					<option value="Espresso">
+					<option value="Flat-white">
+				</datalist>
+			</div>
+
+			<p>How many cups of coffee do you drink a day?</p>
+
+			<input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio" required>
+			<label for="0-2cups-radio">0 to 2 cups</label>
+
+			<input id="3-5cups-radio" name="cups-a-day" value="3-5cups" type="radio" required>
+			<label for="3-5cups-radio">3 to 5 cups</label>
+
+			<input id="6-8cups-radio" name="cups-a-day" value="6-8cups" type="radio" required>
+			<label for="6-8cups-radio">6 to 8 cups</label>
+
+			<input id="9plus-cups-radio" name="cups-a-day" value="9plus-cups" type="radio" required>
+			<label for="9plus-cups-radio">9 or more cups</label>
+
+			<p>How often do you visit Coders Coffeehouse?</p>
+
+			<input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required>
+			<label for="once-a-week">Once a week</label>
+
+			<input id="twice-a-week" name="visit-frequency" value="twice-a-week" type="radio" required>
+			<label for="twice-a-week">Twice a week</label>
+
+			<input id="once-a-fortnight" name="visit-frequency" value="once-a-fortnight" type="radio" required>
+			<label for="once-a-fortnight">Once a fortnight</label>
+
+			<input id="not-often" name="visit-frequency" value="not-often" type="radio" required>
+			<label for="not-often">Not often</label>
+
+			<p>Which of our coders coffeehouse snacks do you enjoy?</p>
+			<div>
+				<input type="checkbox" id="brownies-checkbox" name="brownies">
+				<label for="brownies-checkbox">Brownies</label>
+			</div>
+			<div>
+				<input type="checkbox" id="cookies-checkbox" name="cookies">
+				<label for="cookies-checkbox">Cookies</label>
+			</div>
+			<div>
+				<input type="checkbox" id="nachos-checkbox" name="nachos">
+				<label for="nachos-checkbox">Nachos</label>
+			</div>
+			<div>
+				<input type="checkbox" id="croissants-checkbox" name="croissants">
+				<label for="croissants-checkbox">Croissants</label>
+			</div>
+			<div>
+				<input type="checkbox" id="scones-checkbox" name="scones">
+				<label for="scones-checkbox">Scones</label>
+			</div>	
+		</fieldset>
+
+		<fieldset>
+			<legend>Feedback</legend>
+			<label for="feedback">How can we improve your experience with us?</label>
+			<br>
+			<textarea id="feedback" rows="4" cols="87" name="feedback"></textarea>
+		</fieldset>
+
+
+		<input type="submit" value="Enter prize draw">
+		<input type="reset" value="Reset Form">
+
+	</form>
+	
+</body>
+
+</html>
