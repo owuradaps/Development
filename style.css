@@ -1,0 +1,61 @@
+h1 {
+    color: brown;
+}
+
+header > p {
+    color: white;
+}
+
+header {
+    background-color: black;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#coffee-box {
+    background-color: brown;
+}
+
+#tea-box {
+     background-color: #6f4e37;
+}
+
+#cold-drinks-box {
+    background-color: chocolate;
+}
+
+a:hover {
+    text-decoration: none;
+    color: chocolate;
+}
+
+footer {
+    background-color: #6f4e37;
+    padding: 1em;
+    text-align: center;
+}
+
+footer > span {
+    color: silver;
+}
+
+footer > a {
+    color: beige;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+footer > p {
+    color: silver;
+}
+
+    input[type=submit] {
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: #5e361b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
